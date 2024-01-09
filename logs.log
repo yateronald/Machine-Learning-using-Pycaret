@@ -2820,3 +2820,48 @@ AttributeError: 'RidgeClassifier' object has no attribute 'predict_proba'
 2024-01-09 11:05:17,521:INFO:Logged params: {'bootstrap': True, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': -1, 'oob_score': False, 'random_state': 603, 'verbose': 0, 'warm_start': False}
 2024-01-09 11:05:42,279:INFO:Creating Dashboard logs
 2024-01-09 11:05:42,288:INFO:Model: Logistic Regression
+2024-01-09 11:05:48,078:INFO:Logged params: {'C': 1.0, 'class_weight': None, 'dual': False, 'fit_intercept': True, 'intercept_scaling': 1, 'l1_ratio': None, 'max_iter': 1000, 'multi_class': 'auto', 'n_jobs': None, 'penalty': 'l2', 'random_state': 603, 'solver': 'lbfgs', 'tol': 0.0001, 'verbose': 0, 'warm_start': False}
+2024-01-09 11:06:12,991:INFO:Creating Dashboard logs
+2024-01-09 11:06:12,999:INFO:Model: Naive Bayes
+2024-01-09 11:06:18,456:INFO:Logged params: {'priors': None, 'var_smoothing': 1e-09}
+2024-01-09 11:06:44,428:INFO:Creating Dashboard logs
+2024-01-09 11:06:44,435:INFO:Model: Dummy Classifier
+2024-01-09 11:06:49,202:INFO:Logged params: {'constant': None, 'random_state': 603, 'strategy': 'prior'}
+2024-01-09 11:07:09,334:INFO:Creating Dashboard logs
+2024-01-09 11:07:09,346:INFO:Model: Extra Trees Classifier
+2024-01-09 11:07:15,025:INFO:Logged params: {'bootstrap': False, 'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': 'sqrt', 'max_leaf_nodes': None, 'max_samples': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'n_estimators': 100, 'n_jobs': -1, 'oob_score': False, 'random_state': 603, 'verbose': 0, 'warm_start': False}
+2024-01-09 11:07:42,925:INFO:Creating Dashboard logs
+2024-01-09 11:07:42,932:INFO:Model: K Neighbors Classifier
+2024-01-09 11:07:49,270:INFO:Logged params: {'algorithm': 'auto', 'leaf_size': 30, 'metric': 'minkowski', 'metric_params': None, 'n_jobs': -1, 'n_neighbors': 5, 'p': 2, 'weights': 'uniform'}
+2024-01-09 11:08:17,585:INFO:Creating Dashboard logs
+2024-01-09 11:08:17,597:INFO:Model: Decision Tree Classifier
+2024-01-09 11:08:23,622:INFO:Logged params: {'ccp_alpha': 0.0, 'class_weight': None, 'criterion': 'gini', 'max_depth': None, 'max_features': None, 'max_leaf_nodes': None, 'min_impurity_decrease': 0.0, 'min_samples_leaf': 1, 'min_samples_split': 2, 'min_weight_fraction_leaf': 0.0, 'random_state': 603, 'splitter': 'best'}
+2024-01-09 11:08:45,405:INFO:Creating Dashboard logs
+2024-01-09 11:08:45,409:INFO:Model: CatBoost Classifier
+2024-01-09 11:08:50,636:WARNING:Couldn't get params for model. Exception:
+Traceback (most recent call last):
+  File "C:\Users\flora\anaconda3\envs\dl2\lib\site-packages\pycaret\loggers\dashboard_logger.py", line 78, in log_model
+    params = params.get_all_params()
+  File "C:\Users\flora\anaconda3\envs\dl2\lib\site-packages\catboost\core.py", line 3377, in get_all_params
+    raise CatBoostError("There is no trained model to use get_all_params(). Use fit() to train model. Then use this method.")
+_catboost.CatBoostError: There is no trained model to use get_all_params(). Use fit() to train model. Then use this method.
+
+2024-01-09 11:08:50,652:INFO:Logged params: {}
+2024-01-09 11:09:10,923:INFO:Creating Dashboard logs
+2024-01-09 11:09:10,930:INFO:Model: SVM - Linear Kernel
+2024-01-09 11:09:15,168:INFO:Logged params: {'alpha': 0.0001, 'average': False, 'class_weight': None, 'early_stopping': False, 'epsilon': 0.1, 'eta0': 0.001, 'fit_intercept': True, 'l1_ratio': 0.15, 'learning_rate': 'optimal', 'loss': 'hinge', 'max_iter': 1000, 'n_iter_no_change': 5, 'n_jobs': -1, 'penalty': 'l2', 'power_t': 0.5, 'random_state': 603, 'shuffle': True, 'tol': 0.001, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+2024-01-09 11:09:36,183:INFO:Creating Dashboard logs
+2024-01-09 11:09:36,189:INFO:Model: Quadratic Discriminant Analysis
+2024-01-09 11:09:40,679:INFO:Logged params: {'priors': None, 'reg_param': 0.0, 'store_covariance': False, 'tol': 0.0001}
+2024-01-09 11:10:01,123:INFO:_master_model_container: 16
+2024-01-09 11:10:01,123:INFO:_display_container: 2
+2024-01-09 11:10:01,123:INFO:GradientBoostingClassifier(ccp_alpha=0.0, criterion='friedman_mse', init=None,
+                           learning_rate=0.1, loss='log_loss', max_depth=3,
+                           max_features=None, max_leaf_nodes=None,
+                           min_impurity_decrease=0.0, min_samples_leaf=1,
+                           min_samples_split=2, min_weight_fraction_leaf=0.0,
+                           n_estimators=100, n_iter_no_change=None,
+                           random_state=603, subsample=1.0, tol=0.0001,
+                           validation_fraction=0.1, verbose=0,
+                           warm_start=False)
+2024-01-09 11:10:01,123:INFO:compare_models() successfully completed......................................
